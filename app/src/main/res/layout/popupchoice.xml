@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAgent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/agent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Agent"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/btnlogin"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClient"
+        android:layout_below="@+id/btnAgent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Client"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/btnlogin"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPrestataire"
+        android:layout_below="@+id/btnClient"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/prestataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Prestataire"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/btnlogin"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+
+</RelativeLayout>

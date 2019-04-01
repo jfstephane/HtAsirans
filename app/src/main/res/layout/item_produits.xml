@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/shapeproduit">
+    
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:id="@+id/ivProduit"
+        android:background="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:textStyle="bold"
+        android:textColor="#3363B0"
+        android:layout_toRightOf="@id/ivProduit"
+        android:text="Produit 1"
+        android:textSize="25sp"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDetails"
+        android:textStyle="bold"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/ivProduit"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+        android:textSize="15sp"
+        android:maxLines="4"
+        android:layout_marginLeft="5dp"
+        android:textColor="#3363B0"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Register"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    android:background="@drawable/bglogin">
+
+
+
+    <ImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:src="@mipmap/ic_launcher"
+    android:id="@+id/ivUploadPhoto"
+        android:layout_margin="20dp"
+        android:onClick="uploadPhoto"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/ivUploadId"
+        android:layout_toRightOf="@id/ivUploadPhoto"
+        android:layout_margin="20dp"/>
+
+    <!-- First Name Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputFirstName"
+        android:layout_below="@+id/ivUploadPhoto"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <requestFocus />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Last Name Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLastName"
+        android:layout_below="@+id/inputFirstName"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Date de Naissance Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputBirth"
+        android:layout_below="@+id/inputLastName"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/birthDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday"
+            android:focusable="false"
+            android:inputType="date" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Phone Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPhone"
+        android:layout_below="@+id/inputBirth"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:maxLength="8"
+            android:digits="1234567890+"
+            android:inputType="phone" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputEmail"
+        android:layout_below="@+id/inputPhone"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Password Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputPassword"
+        android:layout_below="@+id/inputEmail"
+        android:layout_marginTop="10dp"
+        app:passwordToggleEnabled="true"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Last Name Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAdresse"
+        android:layout_below="@+id/inputPassword"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt">
+
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse"
+            android:inputType="textPersonName" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/inputAdresse"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/btnlogin"
+            android:onClick="toMainAgent"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>
+</ScrollView>
