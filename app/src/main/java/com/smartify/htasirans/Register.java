@@ -23,6 +23,8 @@ public class Register extends AppCompatActivity {
     EditText birthday;
     final Calendar myCalendar = Calendar.getInstance();
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +55,7 @@ public class Register extends AppCompatActivity {
         String[] mimeTypes = {"image/jpeg", "image/png"};
         intent.putExtra(Intent.EXTRA_MIME_TYPES,mimeTypes);
         // Launching the Intent
-        //startActivityForResult(intent,GALLERY_REQUEST_CODE);
+        startActivityForResult(intent,REQUEST_IMAGE_CAPTURE);
 
     }
 
@@ -63,17 +65,17 @@ public class Register extends AppCompatActivity {
         startActivity(i);
     }
 
-    /*public void onActivityResult(int requestCode,int resultCode,Intent data){
+    public void onActivityResult(int requestCode,int resultCode,Intent data){
         // Result code is RESULT_OK only if the user selects an Image
         if (resultCode == Activity.RESULT_OK)
             switch (requestCode){
-                case GALLERY_REQUEST_CODE:
+                case REQUEST_IMAGE_CAPTURE:
                     //data.getData returns the content URI for the selected Image
                     Uri selectedImage = data.getData();
                     ivPhoto.setImageURI(selectedImage);
                     break;
             }
-    }*/
+    }
 
 
 
