@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsApplications"
+    android:orientation="vertical"
+    android:background="@drawable/bglogin">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:id="@+id/rlUser">
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="111dp"
+            android:background="#000000"
+            android:id="@+id/ivUser"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:id="@+id/tvName"
+            android:layout_toRightOf="@+id/ivUser"
+            android:text="Lorem Ipsum"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tvAge"
+            android:layout_toRightOf="@+id/ivUser"
+            android:layout_below="@id/tvName"
+            android:text="Lorem Ipsum"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tvAdress"
+            android:layout_toRightOf="@+id/ivUser"
+            android:layout_below="@id/tvAge"
+            android:text="Lorem Ipsum"
+            android:maxLines="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/tvPhone"
+            android:layout_toRightOf="@+id/ivUser"
+            android:layout_below="@id/tvAdress"
+            android:text="Lorem Ipsum"
+            android:maxLines="1"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:padding="10dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tvDetails1"
+           android:text="Details Plan"
+           android:textSize="25sp"
+           android:gravity="center"
+           android:layout_centerHorizontal="true"
+           android:textStyle="bold"/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/tvDetails1">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="Time"
+               android:textSize="20sp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="time"
+               android:textSize="20sp"/>
+
+       </LinearLayout>
+
+
+   </RelativeLayout>
+
+
+
+</LinearLayout>
