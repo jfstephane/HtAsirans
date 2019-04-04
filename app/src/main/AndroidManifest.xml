@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailsInsurance"></activity>
+        <activity android:name=".MainClient"></activity>
+        <activity android:name=".DetailsInsurance" />
         <activity android:name=".ListInsurance" />
         <activity android:name=".MainAgent" />
         <activity android:name=".Register" />

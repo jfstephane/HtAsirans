@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".MainAgent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarClient"
+        android:background="#3363B0">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/files"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivClient"
+        android:layout_below="@+id/toolbarClient"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientName"
+        android:layout_below="@+id/ivClient"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:text="Stephane"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientConnect"
+        android:layout_below="@+id/clientName"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="Stephane"
+        android:gravity="center_horizontal"/>
+
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/btnInsurance"
+        android:layout_weight="2"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_below="@+id/clientConnect"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp">
+
+        <Button
+            android:id="@+id/Insurance"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/growth"
+            android:gravity="center"
+            android:text="My Insurances"
+            android:textColor="@drawable/btntext"
+            android:background="@drawable/btnmain"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/btnPayment"
+        android:layout_weight="2"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_below="@+id/clientConnect"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btnInsurance">
+
+        <Button
+            android:id="@+id/payment"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/newapli"
+            android:gravity="center"
+            android:text="Payment"
+            android:textColor="@drawable/btntext"
+            android:background="@drawable/btnmain"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/btnClaims"
+        android:layout_weight="2"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/btnInsurance">
+
+        <Button
+            android:id="@+id/claims"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/invoice"
+            android:gravity="center"
+            android:text="My Claims"
+            android:textColor="@drawable/btntext"
+            android:background="@drawable/btnmain"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:id="@+id/btnProductList"
+        android:layout_weight="2"
+        android:layout_width="150dp"
+        android:layout_height="155dp"
+        android:layout_below="@id/btnPayment"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btnClaims">
+
+        <Button
+            android:id="@+id/productList"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@drawable/files"
+            android:gravity="center"
+            android:text="Product List"
+            android:textColor="@drawable/btntext"
+            android:background="@drawable/btnmain"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>
