@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <android.support.v7.widget.SearchView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:layout_above="@id/tvOr"
+        android:id="@+id/search"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:id="@+id/tvOr"
+        android:textSize="30sp"
+        android:layout_above="@id/btnScan"
+        android:text="Or"
+        android:gravity="center"
+        android:layout_margin="20dp" />
+
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnScan"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputPassword"
+            android:layout_centerHorizontal="true"
+            android:text="Scan Barcode"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/btnlogin"/>
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>
